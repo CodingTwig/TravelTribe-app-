@@ -1,0 +1,72 @@
+h2{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+.BIG{
+    font-size: 300%;
+    margin: 5%;
+}
+
+
+p{
+    text-align: center;
+}
+
+.SPACE{
+    margin: 6%;
+}
+
+.border{
+    border-style: solid;
+    border-radius: 1px;
+    
+    
+}
+
+.boxposition{
+    margin-bottom: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 11%;
+    margin-right: 11%;
+    color:whitesmoke;
+
+}
+
+.center{
+    font-size: 10px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.MEDIUM{
+    font-size: large;
+}
+
+.RoundImage{
+    
+        border-radius: 20%;
+        margin: 10px;
+        
+      
+        width: 40%;
+        margin-top: 20%;
+      
+    
+}
+
+.LargeName{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.SmallName{
+    font-weight: 600;
+    font-size: 30px;
+
+}

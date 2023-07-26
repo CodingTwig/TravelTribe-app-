@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { ellipse, square, triangle, personCircleOutline } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -33,6 +33,10 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import CreateAccount1 from './pages/CreateAccount1';
+import CreateAccount2 from './pages/CreateAccount2';
+import CreateAccount3 from './pages/CreateAccount3';
+import Login from './pages/Login';
 
 setupIonicReact();
 
@@ -63,12 +67,25 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={ellipse} />
             <IonLabel>Tab 2</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+          <IonTabButton tab="Profile" href="/tab3">
+            <IonIcon aria-hidden="true" icon={personCircleOutline} />
+            <IonLabel>Profile</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
+      <Route exact path='/CreateAccount1'>
+        <CreateAccount1/>
+        </Route> 
+      <Route exact path='/CreateAccount2'>
+        <CreateAccount2/>
+
+      </Route>
+      <Route exact path='/CreateAccount3'>
+        <CreateAccount3/>
+      </Route>
+      <Route exact path='/Login'>
+        <Login/>
+      </Route>
     </IonReactRouter>
   </IonApp>
 );
